@@ -1643,3 +1643,12 @@ footer {
         margin-bottom: 32px;
     }
 }
+
+@media (max-width: 500px){
+    .logo_wrap img {
+        height: 25px;
+    }
+    .header_btn_wrap > button {
+        display: none;
+    }
+}
