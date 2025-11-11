@@ -887,6 +887,7 @@ h1 p span {
     word-break: keep-all;
     cursor: default;
 }
+
 .myself_cont_wrap {
     position: absolute;
     left: 0; top: 37.5px;
@@ -902,6 +903,10 @@ h1 p span {
     inset 1px 1px 0px 0px var(--main-color-white),
     inset -2px -2px 0px 0px var(--main-color-darkgrey),
     inset 2px 2px 0px 0px var(--main-color-lightgrey);
+}
+
+.myself_list_menu:first-of-type > .myself_cont_wrap{
+    z-index: 20;
 }
 
 .list_on {

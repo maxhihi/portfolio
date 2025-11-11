@@ -72,6 +72,7 @@ header button {
 
 .logo_wrap img {
     height: 33px;
+    width: auto;
 }
 
 /** header nav **/

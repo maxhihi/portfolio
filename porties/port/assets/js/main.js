@@ -37,7 +37,7 @@ function folderOpen (clickIcon, folderName, className){
     clickIcon.forEach((item, index)=>{
         item.addEventListener("click", ()=>{
             folderName[index].classList.remove(className);
-            zindexCounter++
+            zindexCounter += 10;
             folderName[index].style.zIndex = zindexCounter;
             waitItem[index].classList.remove(className);
             waitItem.forEach((el)=>{
@@ -88,7 +88,7 @@ function resumeBtnClick (clickIcon, folderName, className){
         item.addEventListener("click", ()=>{
             clickIcon.forEach(el => el.classList.remove(className));
             item.classList.add(className);
-            zindexCounter++
+            zindexCounter += 10;
             folderName[index].style.zIndex = zindexCounter;
         })
     });
