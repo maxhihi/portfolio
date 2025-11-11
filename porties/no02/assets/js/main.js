@@ -9,6 +9,16 @@ const headerMiddle = document.querySelector(".header_middle");
 // 로드 된 페이지의 현재 너비
 const currentWinWidth = window.innerWidth;
 
+const topVideo = document.querySelector(".top_video");
+const loadingWrap = document.querySelector(".loading_wrap");
+
+topVideo.addEventListener("loadeddata", ()=>{
+    loadingWrap.style.opacity = "0";
+    setTimeout(()=>{
+    loadingWrap.style.display = "none"},300);
+});
+
+
 
 // 최초 초드 후 리사이즈 이벤트
 function navResizeEvent (){
